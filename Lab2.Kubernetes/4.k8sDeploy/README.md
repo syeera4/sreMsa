@@ -12,7 +12,7 @@ kubectl create deployment h1 --image=httpd
 
 ## 3. h1 deploy의 80번 포트를 Service로 Open하시오.
 ```
-kubectl expose deployment h1 --type="nodePort" -p=80 
+kubectl expose deployment h1 --type="nodePort" -port 80 
 ```
 
 ## 4. h1 deploy의 복제 갯수를 3으로 늘리시오.
